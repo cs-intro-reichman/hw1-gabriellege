@@ -8,6 +8,9 @@ public class TimeFormat {
 			hours = hours - 12;
 			amOrPm = "PM";		
 		}
+		if (hours == 12) {
+			amOrPm = "PM";
+		}
         System.out.println(hours + ":" + minutes + " " + amOrPm);
 	}
 }
